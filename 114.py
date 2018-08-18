@@ -91,8 +91,8 @@ def craw():
         time.sleep(2)
         response = requests.get('http://www.114best.com/gs11/434180324.html', headers=headers)  # 用一个公司的url测试是否请求成功
         if response.status_code == 403:
-            print('访问失败，等待3分钟')
-            time.sleep(180)  # 这里可以改一下试一下，可能可以减少一点时间
+            print('访问失败，等待1分钟')
+            time.sleep(60)  # 这里可以改一下试一下，可能可以减少一点时间
             browser.refresh()
             get_info(m)
         else:
